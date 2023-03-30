@@ -1,0 +1,15 @@
+---
+const { clubs } = Astro.props
+
+const SlotsPageContentHomeBeforeContent = clubs.slots.filter(({ slot }) => {
+	return slot === 'page:content:home:before-content'
+})
+---
+
+<div>
+	{
+		SlotsPageContentHomeBeforeContent.map((Slot) => (
+			<Slot.component {...Slot.props} />
+		))
+	}
+</div>
