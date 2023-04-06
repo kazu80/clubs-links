@@ -10,7 +10,7 @@ import {
 } from '@devprotocol/clubs-core'
 import { default as Admin } from './pages/Admin.astro'
 import Page from './pages/Page.astro'
-import ClubsLinks from './components/Links/ClubsLinks.vue'
+import ClubsLinks from './components/Links/ClubsLinks.astro'
 import Icon from './assets/icon-links.png'
 import ImageLinksPreview01 from './assets/links-preview01.png'
 import ImageLinksPreview02 from './assets/links-preview02.png'
