@@ -5,7 +5,8 @@ import {
 	ClubsPluginCategory,
 	ClubsPluginMeta,
 	ClubsFunctionGetSlots,
-	ClubsPluginOption, ClubsConfiguration,
+	ClubsPluginOption,
+	ClubsConfiguration,
 } from '@devprotocol/clubs-core'
 import { default as Admin } from './pages/Admin.astro'
 import Page from './pages/Page.astro'
@@ -16,12 +17,16 @@ export const getPagePaths: ClubsFunctionGetPagePaths = async (options) => {
 		{
 			paths: [''],
 			component: Page,
-			props: { options }
-		}
+			props: { options },
+		},
 	]
 }
 
-export const getSlots: ClubsFunctionGetSlots = async (options: readonly ClubsPluginOption[], config: ClubsConfiguration, utils) => [
+export const getSlots: ClubsFunctionGetSlots = async (
+	options: readonly ClubsPluginOption[],
+	config: ClubsConfiguration,
+	utils
+) => [
 	{
 		slot: 'page:content:home:after-content',
 		component: ClubsLinks,
@@ -38,11 +43,12 @@ export const meta: ClubsPluginMeta = {
 	displayName: 'Links',
 	category: ClubsPluginCategory.Uncategorized,
 	icon: './assets/icon-links.png',
-	description: 'The app called "Links" is designed to make accessing websites easier. With this app, you can generate links by registering a URL and title. This makes it easy to access websites and other resources online.',
+	description:
+		'The app called "Links" is designed to make accessing websites easier. With this app, you can generate links by registering a URL and title. This makes it easy to access websites and other resources online.',
 	previewImages: [
 		'./assets/links-preview01.png',
 		'./assets/links-preview02.png',
-		'./assets/links-preview03.png'
+		'./assets/links-preview03.png',
 	],
 }
 

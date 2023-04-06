@@ -26,13 +26,16 @@ export default () =>
 			{
 				id: 'clubs-plugin-links',
 				options: [
-					{ key: 'links', value: [
-						{ id: 1, title: 'Twitter', url: 'https://example.com' },
-						{ id: 2, title: 'Instagram', url: 'https://example.com/about' },
-						{ id: 3, title: 'Youtube', url: 'https://example.com/about' },
-						{ id: 4, title: 'TickTok', url: 'https://example.com/about' },
-					]},
+					{
+						key: 'links',
+						value: [
+							{ id: 1, title: 'Twitter', url: 'https://example.com' },
+							{ id: 2, title: 'Instagram', url: 'https://example.com/about' },
+							{ id: 3, title: 'Youtube', url: 'https://example.com/about' },
+							{ id: 4, title: 'TickTok', url: 'https://example.com/about' },
+						],
+					},
 				],
-			}
+			},
 		],
 	})
