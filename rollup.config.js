@@ -1,5 +1,6 @@
 import { dirname, relative, resolve } from 'path'
 import typescript from '@rollup/plugin-typescript'
+import image from "@rollup/plugin-image"
 
 const dir = 'dist'
 
@@ -30,6 +31,7 @@ export default [
 		],
 		plugins: [
 			typescript(),
+			image(),
 			useSrc({ ext: ['.astro', '.svelte', '.vue', '.scss', '.css'], dir }),
 		],
 	},
