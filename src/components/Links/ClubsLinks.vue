@@ -18,8 +18,10 @@ const links = ref<{
 </script>
 
 <template>
-  <h1 class="mb-1 font-xl font-bold">LINK</h1>
-  <ClubsLinksList :links="links" />
+	<section class="py-10">
+  	<h1 class="mb-10 text-4xl text-gray-700 font-bold text-center">Links</h1>
+  	<ClubsLinksList :links="links" />
+	</section>
 </template>
 
 <style lang="scss" scoped>

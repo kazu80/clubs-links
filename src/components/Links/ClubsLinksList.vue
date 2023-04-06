@@ -18,16 +18,11 @@ const {links} = toRefs(props)
 
 <template>
 	<ul class="wrapper">
-	<li v-for="link in links" :key="link.id" class="mb-2 px-2">
-	  <a :href="link.url" target="_blank" rel="noopener noreferrer">
-			<div class="flex">
-			  <div>
-					<p class="text-base">{{ link.title }}</p>
-					<p class="text-xs text-gray-400">{{ link.url }}</p>
-		  	</div>
-			</div>
-	  </a>
-	</li>
+		<li v-for="link in links" :key="link.id" class="mb-5 px-5 last:mb-0">
+			<a :href="link.url" class="inline-flex items-center justify-center px-5 py-3 w-full text-base font-medium text-center text-indigo-100 border border-indigo-500 rounded-lg shadow-sm cursor-pointer hover:text-white bg-gradient-to-br from-purple-500 via-indigo-500 to-indigo-500">
+	  		<span class="relative">{{ link.title }}</span>
+			</a>
+		</li>
 	</ul>
 </template>
 

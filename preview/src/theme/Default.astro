@@ -1,5 +1,10 @@
 ---
 import '@devprotocol/clubs-core/styles'
+const { clubs } = Astro.props
+
+const SlotsPageContentHomeAfterContent = clubs.slots.filter(({ slot }) => {
+	return slot === 'page:content:home:after-content'
+})
 ---
 
 <!DOCTYPE html>
@@ -10,8 +15,13 @@ import '@devprotocol/clubs-core/styles'
 	</head>
 
 	<body>
-		<main>
+		<main class="pt-5">
 			<slot />
+			{
+				SlotsPageContentHomeAfterContent.map((Slot) => (
+		  <Slot.component {...Slot.props} />
+				))
+			}
 		</main>
 	</body>
 </html>

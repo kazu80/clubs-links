@@ -24,11 +24,13 @@ export default () =>
 				],
 			},
 			{
-				id: 'clubs-links',
+				id: 'clubs-plugin-links',
 				options: [
 					{ key: 'links', value: [
-						{ id: 1, title: 'Home', url: 'https://example.com' },
-						{ id: 2, title: 'About', url: 'https://example.com/about' },
+						{ id: 1, title: 'Twitter', url: 'https://example.com' },
+						{ id: 2, title: 'Instagram', url: 'https://example.com/about' },
+						{ id: 3, title: 'Youtube', url: 'https://example.com/about' },
+						{ id: 4, title: 'TickTok', url: 'https://example.com/about' },
 					]},
 				],
 			}
