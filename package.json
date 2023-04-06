@@ -1,8 +1,8 @@
 {
-	"name": "@devprotocol/clubs-plugin-starter-kit",
+	"name": "@kazu80/clubs-plugin-links",
 	"version": "0.1.0",
 	"type": "module",
-	"description": "Template repository for using TypeScript",
+	"description": "This is a links plugin for Clubs",
 	"main": "dist/index.js",
 	"exports": {
 		".": {

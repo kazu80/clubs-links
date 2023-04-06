@@ -11,6 +11,10 @@ import {
 import { default as Admin } from './pages/Admin.astro'
 import Page from './pages/Page.astro'
 import ClubsLinks from './components/Links/ClubsLinks.vue'
+import Icon from './assets/icon-links.png'
+import ImageLinksPreview01 from './assets/links-preview01.png'
+import ImageLinksPreview02 from './assets/links-preview02.png'
+import ImageLinksPreview03 from './assets/links-preview01.png'
 
 export const getPagePaths: ClubsFunctionGetPagePaths = async (options) => {
 	return [
@@ -42,13 +46,13 @@ export const meta: ClubsPluginMeta = {
 	id: 'clubs-plugin-links',
 	displayName: 'Links',
 	category: ClubsPluginCategory.Uncategorized,
-	icon: './assets/icon-links.png',
+	icon: Icon,
 	description:
 		'The app called "Links" is designed to make accessing websites easier. With this app, you can generate links by registering a URL and title. This makes it easy to access websites and other resources online.',
 	previewImages: [
-		'./assets/links-preview01.png',
-		'./assets/links-preview02.png',
-		'./assets/links-preview03.png',
+		ImageLinksPreview01,
+		ImageLinksPreview02,
+		ImageLinksPreview03,
 	],
 }
 
