@@ -39,7 +39,7 @@ export const getSlots: ClubsFunctionGetSlots = async (
 ]
 
 export const getAdminPaths: ClubsFunctionGetAdminPaths = async (options) => {
-	return [{ paths: [''], component: Admin, props: { options } }]
+	return [{ paths: ['links'], component: Admin, props: { options } }]
 }
 
 export const meta: ClubsPluginMeta = {
