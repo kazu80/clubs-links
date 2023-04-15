@@ -19,7 +19,7 @@ const links = ref<{
 
 <template>
 	<section class="py-10">
-  	<h1 class="mb-10 text-4xl text-gray-700 font-bold text-center">Link</h1>
+  	<h1 class="mb-10 text-4xl text-gray-700 font-bold text-center">Links</h1>
   	<ClubsLinksList :links="links" />
 	</section>
 </template>
