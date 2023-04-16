@@ -6,7 +6,7 @@ import {
 	ClubsPluginMeta,
 	ClubsFunctionGetSlots,
 	ClubsPluginOption,
-	ClubsConfiguration,
+	ClubsPluginOptionValue,
 } from '@devprotocol/clubs-core'
 import { default as Admin } from './pages/Admin.astro'
 import Page from './pages/Page.astro'
@@ -16,7 +16,12 @@ import ImageLinksPreview01 from './assets/links-preview01.png'
 import ImageLinksPreview02 from './assets/links-preview02.png'
 import ImageLinksPreview03 from './assets/links-preview01.png'
 
-export const getPagePaths: ClubsFunctionGetPagePaths = async (options) => {
+export const getPagePaths: ClubsFunctionGetPagePaths = async (
+	options: readonly Readonly<{
+		readonly key: string
+		readonly value?: ClubsPluginOptionValue | undefined
+	}>[]
+) => {
 	return [
 		{
 			paths: [''],
@@ -27,9 +32,7 @@ export const getPagePaths: ClubsFunctionGetPagePaths = async (options) => {
 }
 
 export const getSlots: ClubsFunctionGetSlots = async (
-	options: readonly ClubsPluginOption[],
-	config: ClubsConfiguration,
-	utils
+	options: readonly ClubsPluginOption[]
 ) => [
 	{
 		slot: 'page:content:home:after-content',
